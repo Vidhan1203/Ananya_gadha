@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Little Something For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="app">
+<section id="opening" class="page active opening">
+  <div class="inner">
+    <div class="script">Hey…</div>
+    <h1>I made something for you.</h1>
+    <p class="sub">A few memories, a little game,<br>and a final message.</p>
+    <button class="btn" onclick="startMemories()">Start →</button>
+  </div>
+</section>
+
+<div id="memories">
+
+<section class="memory page split" data-page="0">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">1/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Every One Will See Glory ... But Someone know your hardwork </p>
+      <button class="next" onclick="nextMemory(0)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg0" alt="Memory 1"></div>
+  </div>
+</section>
+<section class="memory page polaroid" data-page="1">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">2/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>You always did little things that made big days for me Gadha .</p>
+      <button class="next" onclick="nextMemory(1)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg1" alt="Memory 2"></div>
+  </div>
+</section>
+<section class="memory page full" data-page="2">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">3/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Even in the most ordinary days, being with you made everything feel special Mota.</p>
+      <button class="next" onclick="nextMemory(2)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg2" alt="Memory 3"></div>
+  </div>
+</section>
+<section class="memory page offset" data-page="3">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">4/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Some memories are quiet, but somehow they stay the loudest in my heart.
+        It was good to watch you hidding 
+      </p>
+      <button class="next" onclick="nextMemory(3)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg3" alt="Memory 4"></div>
+  </div>
+</section>
+<section class="memory page scrap" data-page="4">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">5/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>I didn&#x27;t know it then, but this was one of those moments I&#x27;d keep forever.</p>
+      <button class="next" onclick="nextMemory(4)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg4" alt="Memory 5"></div>
+  </div>
+</section>
+<section class="memory page split" data-page="5">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">6/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>The Day which made you cry but taught to alot </p>
+      <button class="next" onclick="nextMemory(5)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg5" alt="Memory 6"></div>
+  </div>
+</section>
+<section class="memory page polaroid" data-page="6">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">7/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Sleepless Night and BSC Stress watching you everytime.</p>
+      <button class="next" onclick="nextMemory(6)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg6" alt="Memory 7"></div>
+  </div>
+</section>
+<section class="memory page full" data-page="7">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">8/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>You made ordinary places feel like they belonged in a story. The day I feed someone special</p>
+      <button class="next" onclick="nextMemory(7)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg7" alt="Memory 8"></div>
+  </div>
+</section>
+<section class="memory page offset" data-page="8">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">9/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>There was always something about these moments that felt different. Sector X</p>
+      <button class="next" onclick="nextMemory(8)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg8" alt="Memory 9"></div>
+  </div>
+</section>
+<section class="memory page scrap" data-page="9">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">10/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Never felt that someone can also cry for me.</p>
+      <button class="next" onclick="nextMemory(9)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg9" alt="Memory 10"></div>
+  </div>
+</section>
+<section class="memory page split" data-page="10">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">11/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>buk lagne pe motee ko ......</p>
+      <button class="next" onclick="nextMemory(10)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg10" alt="Memory 11"></div>
+  </div>
+</section>
+<section class="memory page polaroid" data-page="11">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">12/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>A little snapshot of a time I never want to forget, Ananya Ka 1st SOLO </p>
+      <button class="next" onclick="nextMemory(11)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg11" alt="Memory 12"></div>
+  </div>
+</section>
+<section class="memory page full" data-page="12">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">13/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>No perfect words — just a really good memory.</p>
+      <button class="next" onclick="nextMemory(12)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg12" alt="Memory 13"></div>
+  </div>
+</section>
+<section class="memory page offset" data-page="13">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">14/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>One more little piece of our story.</p>
+      <button class="next" onclick="nextMemory(13)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg13" alt="Memory 14"></div>
+  </div>
+</section>
+<section class="memory page scrap" data-page="14">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">15/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>The kind of day that becomes a memory before you even realise it. </p>
+      <button class="next" onclick="nextMemory(14)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg14" alt="Memory 15"></div>
+  </div>
+</section>
+<section class="memory page split" data-page="15">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">16/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Now silence is the only thing which left behind.</p>
+      <button class="next" onclick="nextMemory(15)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg15" alt="Memory 16"></div>
+  </div>
+</section>
+<section class="memory page polaroid" data-page="16">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">17/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>A simple moment,with her fav maggie but still mom makes better maggie</p>
+      <button class="next" onclick="nextMemory(16)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg16" alt="Memory 17"></div>
+  </div>
+</section>
+<section class="memory page full" data-page="17">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">18/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>MUD MAP DAY </p>
+      <button class="next" onclick="nextMemory(17)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg17" alt="Memory 18"></div>
+  </div>
+</section>
+<section class="memory page offset" data-page="18">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">19/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Some days are ordinary but isko dekh ke sare din special hai mere liye.</p>
+      <button class="next" onclick="nextMemory(18)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg18" alt="Memory 19"></div>
+  </div>
+</section>
+<section class="memory page scrap" data-page="19">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">20/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Another chapter, another memory I want to keep,Staking </p>
+      <button class="next" onclick="nextMemory(19)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg19" alt="Memory 20"></div>
+  </div>
+</section>
+<section class="memory page split" data-page="20">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">21/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Phir se soo rah mota </p>
+      <button class="next" onclick="nextMemory(20)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg20" alt="Memory 21"></div>
+  </div>
+</section>
+<section class="memory page polaroid" data-page="21">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">22/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>I hope this one always makes me smile,Thanks for maggie</p>
+      <button class="next" onclick="nextMemory(21)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg21" alt="Memory 22"></div>
+  </div>
+</section>
+<section class="memory page full" data-page="22">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">23/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>A moment that deserved its own little page, yeh dukk kayee khatam nhi ho rah yrr</p>
+      <button class="next" onclick="nextMemory(22)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg22" alt="Memory 23"></div>
+  </div>
+</section>
+<section class="memory page offset" data-page="23">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">24/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>Twenty-five memories later… and somehow there are still more.</p>
+      <button class="next" onclick="nextMemory(23)">Next →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg23" alt="Memory 24"></div>
+  </div>
+</section>
+<section class="memory page scrap" data-page="24">
+  <div class="memory-card">
+    <div class="memory-copy">
+      <span class="counter">25/25</span>
+      <div class="tiny">A LITTLE MEMORY</div>
+      <div class="script">Remember this?</div>
+      <p>And this is where the memories pause… for one last thing. Not perfectly together but ....</p>
+      <button class="next" onclick="nextMemory(24)">One last thing →</button>
+    </div>
+    <div class="photo-frame"><img class="memory-photo" id="memimg24" alt="Memory 25"></div>
+  </div>
+</section>
+</div>
+
+<section id="puzzle" class="page">
+  <div class="puzzle-wrap">
+    <div class="script">One last thing…</div>
+    <h2>Put these memories in the order they happened ❤️</h2>
+    <div class="puzzle-board">
+      <p>Drag & drop the photos into the correct sequence.</p>
+      <div class="puzzle-grid" id="puzzleGrid"></div>
+      <div class="answer" id="answer">
+        <div class="slot" data-pos="0">1</div><div class="slot" data-pos="1">2</div>
+        <div class="slot" data-pos="2">3</div><div class="slot" data-pos="3">4</div>
+        <div class="slot" data-pos="4">5</div>
+      </div>
+      <p class="hint">Phone: tap two photos to swap. Laptop: drag them.</p>
+      <button class="submit" onclick="submitPuzzle()">Submit</button>
+    </div>
+  </div>
+</section>
+
+<section id="wrong" class="page result wrong">
+  <div class="result-card">
+    <div class="script">Awww… that's not it! 😭</div>
+    <p>I know you remember our story better than this, Aches sochna <br>Try again!</p>
+    <button class="try" onclick="resetPuzzle()">Try Again</button>
+  </div>
+</section>
+
+<section id="correct" class="page result correct">
+  <div class="result-card">
+    <div class="script">You got it! ❤️</div>
+    <p>Maybe some things were always meant to fall into the right place.<b> Again You are the best thing which happen to me. </b>Will always Miss you <br>
+    <br> THANK YOU, SORRY, MISS YOU </br></p>
+    <button class="continue" onclick="showFinal()">Continue →</button>
+  </div>
+</section>
+
+<section id="final" class="page final">
+  <div class="final-card">
+    <div class="script">Thank you…</div>
+    <img id="finalPhoto" class="final-photo" alt="Final memory">
+    <p>For being such an important part of my life.<br>
+    Some people stay forever. Some people change us forever.<br>
+    <b>You did both. ❤️</b><br><br>
+    Take care of yourself.<br>Always.<br> Happy Landing Ananya </br> ❤️</p>
+  </div>
+</section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
