@@ -1,17 +1,4 @@
-/* ================================
-   EDIT THESE SETTINGS
-   ================================
 
-   1) MEMORY PHOTO ORDER
-   photo-01.jpg = 1, photo-02.jpg = 2, etc.
-   Change the numbers below to change which photo appears on each memory page.
-
-   2) PUZZLE CORRECT SEQUENCE
-   Change the numbers below to choose the correct 1 → 5 puzzle order.
-   Example: [3,1,5,2,4] means puzzle-03, puzzle-01, puzzle-05, puzzle-02, puzzle-04.
-
-   You only need to edit the two arrays below.
-*/
 const memoryPhotoOrder = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
   11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
